@@ -1,11 +1,17 @@
-header {
+/* Header Styling */
+
+header > h1 {
   color: green;
-}
+  text-align: center;
+  font-style: oblique;
+  font-size: 26px;
+  }
+
 header > ul {
   overflow: hidden;
   background-color: #f1f1f1;
-  backg
-}
+  }
+
 header > ul > a {
   float: left;
   color: black;
@@ -18,37 +24,47 @@ header > ul > a {
   padding-right: 50px;
   margin-left: 48px;
   margin-right: 48px;
+  margin-top:24px;
+  margin-bottom:24px;
   border: .5px;
   border-style:solid;
-  border-radius:5px
-
-}
+  border-radius:5px;
+  }
 
 header> ul > li {
   background-color: red
-}
+  }
+
+/* Body Styling */
+
+body {
+    background-color: white;
+    max-width: 60%;
+    min-height: 100%;
+    align-self: center;
+    background-position: center;
+    font-family:cursive;
+    margin: auto auto auto auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    filter:drop-shadow(15px 10px 20px #000000);
+    }
 
 body > h1 {
   color: green;
-}
+  }
 
 body >p {
-  margin: 50%
+  text-indent: 20px;
   text-align: left;
-}
+  font-size: 18px;
+  }
 
-body {
-  background-color: white;
-   max-width: 60%;
-   min-height: 100%;
-   align-self: center;
-   background-position: center;
-   font-family:cursive;
-   margin: auto auto auto auto;
-   padding-left: 30px;
-   padding-right: 30px;
-   filter:drop-shadow(15px 10px 20px #000000);
+body > ul{
+  align-items: center;
 }
+/* HTML Styling */
+
 html {
   background-image: url(images/background.jpg);
   background-repeat: no-repeat;
@@ -56,4 +72,4 @@ html {
   background-attachment: fixed;
   height: 100%;
   margin: 0; padding: 0; border: 0;
-}
+  }
