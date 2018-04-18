@@ -2,12 +2,14 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="base.css">
 <style>
 body {
     font-family: "Lato", sans-serif;
     transition: background-color .5s;
 }
 
+/* Open Nav Bar */
 .sidenav {
     height: 100%;
     width: 0;
@@ -21,6 +23,8 @@ body {
     padding-top: 15px;
 }
 
+/* Nav Bar Links */
+
 .sidenav a {
     padding: 8px 8px 8px 28px;
     text-decoration: none;
@@ -30,14 +34,20 @@ body {
     transition: 0.3s;
 }
 
+/* Nav Bar Link on Hover */
+
 .sidenav a:hover {
     color: green;
     transition: .75s;
 }
 
+/* Active Page on Nav bar */
+
 .sidenav a:active {
   color: rgb(15, 180, 32)
 }
+
+/* Close Nav bar */
 
 .sidenav .closebtn {
     position: absolute;
@@ -47,17 +57,24 @@ body {
     margin-left: 50px;
 }
 
+/* Body Text */
+
 #main {
     transition: margin-left .5s;
     padding: 16px;
 }
 
+/* Screen Padding */
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
 </style>
+
 </head>
+
 <body>
 
 <div id="mySidenav" class="sidenav">
@@ -87,6 +104,36 @@ function closeNav() {
     document.body.style.backgroundColor = "white";
 }
 </script>
-
+<hr>
+  <h1>Chiropractic Care</h1>
+  <p>Our high quality chiropractic care is provided by Dr. Taylor Overmohle and Dr. Susan Duncan,
+  a Certified Chiropractic Sports Physician, and acupuncturist. We do offer chiropractic care for
+  the entire family from infant to geriatric.</p>
+  <h1>Acupuncture</h1>
+  <p>Our office incorporates classical Traditional Chinese Medicine (TCM) using Clean Needle Technique,
+  which provides the opportunity to heal from within. Acupuncture is often combined with herbal support.
+  Currently the World Health Organization recognizes over 200 conditions in which acupuncture is very effective.</p>
+  <h1>Physicial Therapy</h1>
+  <p>If needed, our office procedures include electrical stimulation, ultrasound, inversion traction table,
+    Airdyne bike, Sun Harmon Chi machine, stretching, traction, hot packs, physical supports, and a Human Touch Techonlogy
+    zero gravity massage chair.
+  </p>
+  <h1>Nutritional Consulting</h1>
+  <p>Giving your body what it needs is paramount for the healing process. This is more important now
+  than it has ever been, as most food is not complete and does not give the body proper nourishment.
+  Let us guide you to a healthier, happier, and richer lifestyle, offering nutritional information and whole food nutritional
+  products. We can also provide you with hair analysis to give a detailed look at your individual needs and demands.</p>
+  <hr>
+  <footer style="text-align:center;"><p><b>Duncan Chiropractic and Acupuncture Clinic</b></p>
+    <p>13609 110th Ave.</p>
+    <p>Davenport, IA 52804</p>
+    <p>Hours: <br>
+      Monday, Wednesday, Friday: 9 a.m. - 5 p.m.<br>
+      OR by appointment<br> <br>
+      Contact:<br>
+      (563) 381 2010 <br>
+      duncanchiropractic@gmail.com
+    </p>
+  </footer>
 </body>
 </html>

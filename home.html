@@ -5,15 +5,104 @@
     <title>Duncan Chiropractic</title>
     <link rel="stylesheet" href="base.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      /* Open Nav Bar */
+      .sidenav {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #111;
+          overflow-x: hidden;
+          transition: .5s;
+          padding-top: 15px;
+      }
+
+      /* Nav Bar Links */
+
+      .sidenav a {
+          padding: 8px 8px 8px 28px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #818181;
+          display: block;
+          transition: 0.3s;
+      }
+
+      /* Nav Bar Link on Hover */
+
+      .sidenav a:hover {
+          color: green;
+          transition: .75s;
+      }
+
+      /* Active Page on Nav bar */
+
+      .sidenav a:active {
+        color: rgb(15, 180, 32)
+      }
+
+      /* Close Nav bar */
+
+      .sidenav .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+      }
+
+      /* Body Text */
+
+      #main {
+          transition: margin-left .5s;
+          padding: 16px;
+      }
+
+      /* Screen Padding */
+
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+
+      </style>
   </head>
   <body>
     <header>
-      <ul>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="testing.html">Test1</a>
+        <a href="testing2.html">Test2</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+
+      <script>
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+          document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+          document.body.style.backgroundColor = "white";
+      }
+      </script>
+      <!-- <ul>
         <a href="home.html"><li>Home</li></a>
         <a href="about.html"><li>About</li></a>
         <a href="products.html"><li>Products</li></a>
         <a href="services.html" style="text-decoration:none;"><li>Services</li></a>
-      </ul>
+      </ul> -->
       <h1>Dr. Susan Duncan <br> Certified Chiropractic
          Sports Physician, Liscened Acupuncturer</h1>
     </header>
@@ -22,6 +111,9 @@
   health and wellness with the powerful recuperative ability of your body released.
   We offer the best chiropractic care with nutritional advice, physical therapy, and acupuncture.</p>
 
+  <h1>Would you benefit from chiropractic care?</h1>
+  <p>If you are experiencing any of the following conditions</p>
+
   <footer style="text-align:center;"><p><b>Duncan Chiropractic and Acupuncture Clinic</b></p>
     <p>13609 110th Ave.</p>
     <p>Davenport, IA 52804</p>
@@ -29,7 +121,7 @@
       Monday, Wednesday, Friday: 9 a.m. - 5 p.m.<br>
       OR by appointment<br> <br>
       Contact:<br>
-      (563) 381 2010 <br>
+      <a href="tel:+15633812010"> tel:(563) 381 2010
       duncanchiropractic@gmail.com
     </p>
   </footer>

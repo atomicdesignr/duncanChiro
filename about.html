@@ -5,15 +5,104 @@
     <link rel="stylesheet" href="base.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About the Doctors</title>
+    <style>
+      /* Open Nav Bar */
+      .sidenav {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #111;
+          overflow-x: hidden;
+          transition: .5s;
+          padding-top: 15px;
+      }
+
+      /* Nav Bar Links */
+
+      .sidenav a {
+          padding: 8px 8px 8px 28px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #818181;
+          display: block;
+          transition: 0.3s;
+      }
+
+      /* Nav Bar Link on Hover */
+
+      .sidenav a:hover {
+          color: green;
+          transition: .75s;
+      }
+
+      /* Active Page on Nav bar */
+
+      .sidenav a:active {
+        color: rgb(15, 180, 32)
+      }
+
+      /* Close Nav bar */
+
+      .sidenav .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+      }
+
+      /* Body Text */
+
+      #main {
+          transition: margin-left .5s;
+          padding: 16px;
+      }
+
+      /* Screen Padding */
+
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+
+      </style>
   </head>
   <body>
     <header>
-      <ul>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="about.html">About Us</a>
+        <a href="home.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+      </div>
+
+      <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+      </div>
+
+      <script>
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+          document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+          document.body.style.backgroundColor = "white";
+      }
+      </script>
+      <!-- <ul>
         <a href="home.html"><li>Home</li></a>
         <a href="about.html"><li>About</li></a>
         <a href="products.html"><li>Products</li></a>
         <a href="services.html" style="text-decoration:none;"><li>Services</li></a>
-      </ul>
+      </ul> -->
       <h1>Dr. Susan Duncan <br> Certified Chiropractic
          Sports Physician, Liscened Acupuncturer</h1>
     </header>
@@ -22,16 +111,8 @@
       degree from Pennsylvania State University. She continued her education at Palmer
       College of Chiropractic to graduate Cum Laude. After graduation, Dr. Duncan worked
       as a falculty member for 10 years while starting her own practice here in the Quad Cities.
-      Dr. Susan Duncan has always been an avid sport enthusiast. During her high school career,
-      she participated in:
-
-      <ul>
-        <li>Swimming</li>
-        <li>Cheer</li>
-        <li>Gymnastics Captain</li>
-        <li>Horse trail events</li>
-        <li>Show ring events</li>
-      </ul>
+      During Dr. Duncan's high school career, she participated in many sports. To this day, she is still
+      an avid sport enthusiast
 
     </p>
 
