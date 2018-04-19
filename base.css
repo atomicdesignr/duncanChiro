@@ -97,9 +97,10 @@ footer > p {
 footer > p:last-child {
   margin-bottom: 50px;
   padding-bottom: 25px;
+  font-size: 8px;
 }
 
-footer >p:first-child {
+footer > p:first-child {
   margin-top: 50px;
   padding-top: 25px;
 }
