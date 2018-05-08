@@ -9,6 +9,12 @@ function openNav() {
       var i;
       for (i = 0; i < h1s.length; i++) {
       h1s[i].style.color = "rgba(0,0,0,0.4)";
+
+      var ps = document.getElementsByTagName("p");
+      var i;
+      for (i = 0; i < ps.length; i++) {
+        ps[i].style.color = "rgba(0,0,0,0.4)";
+      }
 }
       // document.getElementById("style.color = "rgba(0,0,0,0.4)";
   }
@@ -24,6 +30,11 @@ function openNav() {
       var i;
       for (i = 0; i < h1s.length; i++) {
       h1s[i].style.color = "rgb(31, 99, 1)";
+
+      var ps = document.getElementsByTagName("p");
+      var i;
+      for (i = 0; i < ps.length; i++) {
+      ps[i].style.color = "rgb(0, 0, 0)";
   }
 }
 
