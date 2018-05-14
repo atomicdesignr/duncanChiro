@@ -8,6 +8,8 @@ img {vertical-align: middle;}
   max-width: 450px;
   position: center;
   margin: auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 /* Next & previous buttons */
