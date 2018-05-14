@@ -3,6 +3,7 @@
   padding: 2%;
   margin: 4%;
   box-shadow: 2px 4px 6px 4px rgba(0,247,17,.5);
+
 }
 
 
@@ -74,3 +75,11 @@
   font-style: oblique;
   font-size: 12px;
   }
+
+
+.footer {
+  text-align: center;
+  margin-bottom: 2%;
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
